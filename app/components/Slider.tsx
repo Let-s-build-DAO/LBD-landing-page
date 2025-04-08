@@ -50,17 +50,17 @@ export default function Slider() {
       switch (e.key) {
         case 'ArrowUp':
         case 'PageUp':
-          swiper.slidePrev();
+          swiper.slideNext();
           break;
         case 'ArrowDown':
         case 'PageDown':
-          swiper.slideNext();
+          swiper.slidePrev();
           break;
         case 'Home':
           swiper.slideTo(0);
           break;
         case 'End':
-          swiper.slideTo(8); // Total slides - 1
+          swiper.slideTo(2);
           break;
         default:
           return;
