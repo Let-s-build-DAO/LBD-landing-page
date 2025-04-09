@@ -67,10 +67,10 @@ const HeaderNav = () => {
             <Link to="/about" className="hover:text-[#7B5CFF]">About us</Link>
           </p>
           <p className="my-3">
-            <Link to="/academy" className="hover:text-[#7B5CFF]">Academy</Link>
+            <Link to="https://academy.letsbuilddao.org/" className="hover:text-[#7B5CFF]">Academy</Link>
           </p>
           <p className="my-3">
-            <Link to="/lazy-nft" className="hover:text-[#7B5CFF]">Lazy NFT</Link>
+            <Link to="https://lazy.letsbuilddao.org/" className="hover:text-[#7B5CFF]">Lazy NFT</Link>
           </p>
 
           <button className="rounded-full text-[#FBFBFB] my-3 py-2 px-6 border border-[#E5DEFF] bg-[#7B5CFF]">

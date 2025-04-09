@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 // import required modules
-import { EffectCards } from 'swiper/modules';
+import { EffectCards, Mousewheel } from 'swiper/modules';
 import { useIsMobile } from '~/utils/isMobile';
 
 export default function Slider() {
@@ -19,7 +19,7 @@ export default function Slider() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, [mounted]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,38 +43,47 @@ export default function Slider() {
         observer.unobserve(sliderContainerRef.current);
       }
     };
-  }, []);
+  }, [mounted]);
 
   // Handle keyboard events
   useEffect(() => {
     const handleKeyDown = (e: any) => {
-      if (!isActive || !swiperRef.current) return;
+      if (!isActive || !mounted || !swiperRef.current) return;
 
       const swiper = swiperRef?.current?.swiper;
+
+      const isAtBeginning = swiper.isBeginning;
+      const isAtEnd = swiper.isEnd;
 
       switch (e.key) {
         case 'ArrowUp':
         case 'PageUp':
-          swiper.slideNext();
+          if (!isAtEnd) {
+            e.preventDefault();
+            swiper.slideNext();
+          }
           break;
         case 'ArrowDown':
         case 'PageDown':
-          swiper.slidePrev();
+          if (!isAtBeginning) {
+            e.preventDefault();
+            swiper.slidePrev();
+          }
           break;
         case 'Home':
           swiper.slideTo(0);
           break;
         case 'End':
-          swiper.slideTo(2);
+          swiper.slideTo(swiper.slides.length - 1);
           break;
         default:
           return;
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown, { passive: false });
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isActive]);
+  }, [isActive, mounted]);
 
   return (
     <>{mounted &&
@@ -86,13 +95,18 @@ export default function Slider() {
         <Swiper
           effect={'cards'}
           grabCursor={true}
-          modules={[EffectCards]}
+          modules={[EffectCards, Mousewheel]}
           className="mySwiper"
           direction='vertical'
           cardsEffect={{
             slideShadows: true,
             perSlideOffset: isMobile ? 10 : 20,
             perSlideRotate: 0,
+          }}
+          mousewheel={{
+            forceToAxis: true,
+            sensitivity: 1,
+            releaseOnEdges: true,
           }}
           initialSlide={2}
           ref={swiperRef}
