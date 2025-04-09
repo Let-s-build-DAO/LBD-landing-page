@@ -13,6 +13,7 @@ body {
 .swiper {
   width: 94%;
   height: 500px;
+  position: relative;
 }
 
 @media (max-width: 768px) {

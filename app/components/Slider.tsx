@@ -8,13 +8,18 @@ import 'swiper/css/effect-cards';
 
 // import required modules
 import { EffectCards } from 'swiper/modules';
+import { useIsMobile } from '~/utils/isMobile';
 
 export default function Slider() {
-
+  const isMobile = useIsMobile();
   const swiperRef = useRef<{ swiper: any } | null>(null);
   const sliderContainerRef = useRef<HTMLDivElement | null>(null);
   const [isActive, setIsActive] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -72,10 +77,10 @@ export default function Slider() {
   }, [isActive]);
 
   return (
-    <>
+    <>{mounted &&
       <div
         ref={sliderContainerRef}
-        className='py-32'
+        className='py-32 relative'
       >
 
         <Swiper
@@ -86,7 +91,7 @@ export default function Slider() {
           direction='vertical'
           cardsEffect={{
             slideShadows: true,
-            perSlideOffset: 20,
+            perSlideOffset: isMobile ? 10 : 20,
             perSlideRotate: 0,
           }}
           initialSlide={2}
@@ -128,7 +133,7 @@ export default function Slider() {
           </SwiperSlide>
         </Swiper>
       </div>
-
+    }
     </>
   );
 }
