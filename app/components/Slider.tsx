@@ -93,7 +93,7 @@ export default function Slider() {
           ref={swiperRef}
         >
           <SwiperSlide>
-            <div className='lg:flex p-10 justify-evenly'>
+            <div className='lg:flex lg:p-10 p-6 justify-evenly'>
               <img className='lg:w-[40%]' src="/images/lbd-academy.png" alt="" />
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold text-[#030303]'>Bootcamps, Hackathons & Meetups</h3>
@@ -103,7 +103,7 @@ export default function Slider() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='lg:flex p-10 justify-evenly'>
+            <div className='lg:flex lg:p-10 p-6 justify-evenly'>
               <img className='lg:w-[40%]' src="/images/lbd-academy.png" alt="" />
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Lazy NFTs</h3>
@@ -117,7 +117,7 @@ export default function Slider() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='lg:flex p-10 justify-evenly'>
+            <div className='lg:flex lg:p-10 p-6 justify-evenly'>
               <img className='lg:w-[40%]' src="/images/lbd-academy.png" alt="" />
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Let’s Build Academy</h3>

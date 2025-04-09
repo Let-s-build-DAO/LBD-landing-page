@@ -1,11 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 
 const HeaderNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10); // triggers when user scrolls down 10px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50">
+    <header
+      className={`fixed top-0 w-full left-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-[#030303]/90 backdrop-blur-md shadow-md' : ''
+      }`}
+    >
       <div className="flex justify-between items-center px-6 md:px-10 py-4">
         <img className="w-28" src="/images/logo.png" alt="Logo" />
 
@@ -45,10 +60,18 @@ const HeaderNav = () => {
             isOpen ? 'block' : 'hidden'
           } absolute md:static top-[70px] left-0 w-full md:w-auto md:flex bg-[#7B5CFF] md:bg-transparent px-6 md:px-0 py-4 md:py-0 flex-col md:flex-row gap-6 md:gap-8 text-[#EBEBEB] items-start md:items-center`}
         >
-          <p className='my-3'><Link to="/" className="hover:text-[#7B5CFF]">Home</Link></p>
-          <p className='my-3'><Link to="/about" className="hover:text-[#7B5CFF]">About us</Link></p>
-          <p className='my-3'><Link to="/academy" className="hover:text-[#7B5CFF]">Academy</Link></p>
-          <p className='my-3'><Link to="/lazy-nft" className="hover:text-[#7B5CFF]">Lazy NFT</Link></p>
+          <p className="my-3">
+            <Link to="/" className="hover:text-[#7B5CFF]">Home</Link>
+          </p>
+          <p className="my-3">
+            <Link to="/about" className="hover:text-[#7B5CFF]">About us</Link>
+          </p>
+          <p className="my-3">
+            <Link to="/academy" className="hover:text-[#7B5CFF]">Academy</Link>
+          </p>
+          <p className="my-3">
+            <Link to="/lazy-nft" className="hover:text-[#7B5CFF]">Lazy NFT</Link>
+          </p>
 
           <button className="rounded-full text-[#FBFBFB] my-3 py-2 px-6 border border-[#E5DEFF] bg-[#7B5CFF]">
             Join Community

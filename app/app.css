@@ -5,6 +5,8 @@ html,
 body {
   background-color: #030303;
   color: white;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 
@@ -73,5 +75,5 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 130vh;
+  height: 110vh;
 }
