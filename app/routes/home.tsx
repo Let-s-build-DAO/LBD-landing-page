@@ -10,7 +10,7 @@ import Hero from '~/components/Hero';
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "Let's Build DAO" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Powering Africa’s Web3 Future with Data, Governance & Education" },
   ];
 }
 

@@ -7,7 +7,7 @@ import type { Route } from '../+types/root';
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "About - Let's Build DAO" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Powering Africa’s Web3 Future with Data, Governance & Education" },
   ];
 }
 

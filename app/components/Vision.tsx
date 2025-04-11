@@ -5,7 +5,7 @@ const Vision = () => {
     <div>
       <div className='text-center'>
         <p className='text-[#C4C4C4]'>About Let’s Build Dao</p>
-        <h1 className='lg:text-5xl text-3xl mt-3 font-bold'>Our Vision & Impact</h1>
+        <h1 className='lg:text-5xl text-3xl mt-3 font-bold'>Our Vision</h1>
       </div>
       <div className='mt-10 px-10'>
         <div className='linear'></div>
@@ -21,7 +21,7 @@ const Vision = () => {
           </div>
           <div className='linear opacity-50 lg:h-[100px] my-auto'></div>
           <div className='lg:w-[25%] mx-auto lg:my-auto my-6 lg:text-right text-center'>
-            <h3 className='text-4xl font-bold'>4.5M+</h3>
+            <h3 className='text-4xl font-bold'>45.6M+</h3>
             <p className='text-[#CDCDCD] text-xs'>on-chain transactions by 2030</p>
           </div>
         </div>
