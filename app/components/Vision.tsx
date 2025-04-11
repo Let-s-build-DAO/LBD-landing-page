@@ -7,7 +7,7 @@ const Vision = () => {
         <p className='text-[#C4C4C4]'>About Let’s Build Dao</p>
         <h1 className='lg:text-5xl text-3xl mt-3 font-bold'>Our Vision</h1>
       </div>
-      <div className='mt-10 px-10'>
+      <div className='mt-10 lg:px-10 px-6'>
         <div className='linear'></div>
         <div className='lg:flex justify-between'>
           <div className='lg"w-[25%] mx-auto lg:my-auto my-6 lg:text-right text-center'>

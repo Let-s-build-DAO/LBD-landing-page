@@ -15,7 +15,7 @@ const about = () => {
   return (
     <>
       <HeaderNav />
-      <section id='about' className='mx-10'>
+      <section id='about' className='lg:mx-10 mx-6'>
         <div className='lg:w-[40%] mx-auto text-center py-40'>
           <p>About Let’s Build DAO</p>
           <h4 className='text-5xl font-bold'>Building Africa’s On-Chain Future</h4>
@@ -31,7 +31,7 @@ const about = () => {
           </div>
         </div>
       </section>
-      <section className='my-20 mx-10'>
+      <section className='my-20 lg:mx-10 mx-6'>
         <div className='lg:w-[55%] my-10'>
           <p>What We Do</p>
           <h3 className='lg:text-5xl text-3xl font-bold'>Empowering Africa with Data-Driven Web3 Solutions</h3>

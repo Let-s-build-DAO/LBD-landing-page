@@ -32,9 +32,8 @@ const home = () => {
       <Hero />
       <section className='bg-transparent -mt-10'>
         <Vision />
-
       </section>
-      <section className='my-20 mx-10'>
+      <section className='my-20 lg:mx-10 mx-6'>
         <div className='lg:w-[70%] text-center mx-auto'>
           <p className='text-[#CDCDCD]'>Why LB DAO?</p>
           <h3 className='lg:text-5xl text-3xl font-bold my-4'>Powering Africa’s Web3 Future with Data, Governance & Education</h3>
@@ -75,7 +74,7 @@ const home = () => {
         </div>
         <div className='linear'></div>
       </section>
-      <section>
+      <section className='lg:mx-10 mx-6'>
         <div className='lg:w-[35%] mx-auto text-center my-10'>
           <p className='text-[#CDCDCD]'>Our Ecosystem</p>
           <p className='lg:text-5xl text-3xl my-4 font-bold'>Let’s Build DAO Intelligence Hub</p>
