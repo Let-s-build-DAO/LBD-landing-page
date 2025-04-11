@@ -9,6 +9,7 @@ import 'swiper/css/effect-cards';
 // import required modules
 import { EffectCards, Mousewheel } from 'swiper/modules';
 import { useIsMobile } from '~/utils/isMobile';
+import { Link } from 'react-router';
 
 export default function Slider() {
   const isMobile = useIsMobile();
@@ -117,7 +118,9 @@ export default function Slider() {
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold text-[#030303]'>Bootcamps, Hackathons & Meetups</h3>
                 <p className='text-base text-[#373737] my-3'>We host community-driven Web3 events, connecting builders, investors, and enthusiasts to innovate, collaborate, and fund Africa’s blockchain revolution.</p>
-                <button className='rounded-full text-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] bg-[#7B5CFF]'>Join Our Community </button>
+                <Link to={'https://t.me/letsbuilddaocommunity'}>
+                  <button className='rounded-full text-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] bg-[#7B5CFF]'>Join Our Community </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -131,7 +134,9 @@ export default function Slider() {
                   ✅ Let’s Build Academy (Web3 courses) <br />
                   ✅ Exclusive Meetups & Events <br />
                   ✅ LB DAO Governance & Funding Decisions</p>
-                <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Claim our NFt </button>
+                <Link to="https://lazy.letsbuilddao.org/">
+                  <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Claim our NFt </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -141,7 +146,9 @@ export default function Slider() {
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Let’s Build Academy</h3>
                 <p className='text-base text-[#C4C4C4] my-3'>A self-learning platform that teaches Web3 development, design, writing, and more. Access is granted through our Lazy NFT collection.</p>
-                <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Get Started </button>
+                <Link to="https://academy.letsbuilddao.org/">
+                  <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Get Started </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
