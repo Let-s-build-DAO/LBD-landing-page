@@ -21,7 +21,7 @@ const HeaderNav = () => {
         }`}
     >
       <div className="flex justify-between items-center px-6 md:px-10 py-4">
-        <img className="w-28" src="/images/logo.png" alt="Logo" />
+        <img className="w-10" src="/images/new-logo.png" alt="Logo" />
 
         {/* Hamburger menu for small screens */}
         <button
