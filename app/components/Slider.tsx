@@ -119,7 +119,7 @@ export default function Slider() {
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold text-[#030303]'>Bootcamps, Hackathons & Meetups</h3>
                 <p className='text-base text-[#373737] my-3'>We host community-driven Web3 events, connecting builders, investors, and enthusiasts to innovate, collaborate, and fund Africa’s blockchain revolution.</p>
                 <Link to={'https://t.me/letsbuilddaocommunity'}>
-                  <button className='rounded-full text-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] bg-[#7B5CFF]'>Join Our Community </button>
+                  <button className='rounded-full text-[#FBFBFB] py-3 px-8 border border-[#8E0EB9] bg-[#8E0EB9]'>Join Our Community </button>
                 </Link>
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function Slider() {
                   ✅ Exclusive Meetups & Events <br />
                   ✅ LB DAO Governance & Funding Decisions</p>
                 <Link to="https://lazy.lbdao.xyz/">
-                  <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Claim our NFt </button>
+                  <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#8E0EB9] text-[#8E0EB9]'>Claim our NFt </button>
                 </Link>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Slider() {
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Let’s Build Academy</h3>
                 <p className='text-base text-[#C4C4C4] my-3'>A self-learning platform that teaches Web3 development, design, writing, and more. Access is granted through our Lazy NFT collection.</p>
                 <Link to="https://academy.lbdao.xyz/">
-                  <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Get Started </button>
+                  <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#8E0EB9] text-[#8E0EB9]'>Get Started </button>
                 </Link>
               </div>
             </div>
