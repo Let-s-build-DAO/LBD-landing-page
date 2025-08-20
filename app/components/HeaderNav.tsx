@@ -65,10 +65,10 @@ const HeaderNav = () => {
             <Link to="/about" className="hover:text-[#7B5CFF]">About us</Link>
           </p>
           <p className="my-3">
-            <Link to="https://academy.letsbuilddao.org/" className="hover:text-[#7B5CFF]">Academy</Link>
+            <Link to="https://academy.lbdao.xyz/" className="hover:text-[#7B5CFF]">Academy</Link>
           </p>
           <p className="my-3">
-            <Link to="https://lazy.letsbuilddao.org/" className="hover:text-[#7B5CFF]">Lazy NFT</Link>
+            <Link to="https://lazy.lbdao.xyz/" className="hover:text-[#7B5CFF]">Lazy NFT</Link>
           </p>
 
           <Link to={'https://t.me/letsbuilddaocommunity'}>

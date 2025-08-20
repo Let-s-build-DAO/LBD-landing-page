@@ -14,14 +14,14 @@ export function meta({ }: Route.MetaArgs) {
 
     { property: "og:title", content: "Let's Build DAO" },
     { property: "og:description", content: "Powering Africa’s Web3 Future with Data, Governance & Education" },
-    { property: "og:image", content: "http://letsbuilddao.org/images/logo.png" },
-    { property: "og:url", content: "http://letsbuilddao.org/" },
+    { property: "og:image", content: "http://lbdao.xyz/images/logo.png" },
+    { property: "og:url", content: "http://lbdao.xyz/" },
     { property: "og:type", content: "website" },
 
     // 👇 Twitter Card
     { name: "twitter:title", content: "Let's Build DAO" },
     { name: "twitter:description", content: "Powering Africa’s Web3 Future with Data, Governance & Education" },
-    { name: "twitter:image", content: "http://letsbuilddao.org/images/logo.png" },
+    { name: "twitter:image", content: "http://lbdao.xyz/images/logo.png" },
   ];
 }
 

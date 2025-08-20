@@ -9,8 +9,8 @@ const Footer = () => {
         <div className='flex lg:w-80 mx-auto justify-between'>
           <p><Link to='/'>Home</Link></p>
           <p><Link to='/about'> About us </Link></p>
-          <p><Link to="https://academy.letsbuilddao.org/">Academy</Link> </p>
-          <p><Link to="https://lazy.letsbuilddao.org/">Lazy NFT</Link></p>
+          <p><Link to="https://academy.lbdao.xyz/">Academy</Link> </p>
+          <p><Link to="https://lazy.lbdao.xyz/">Lazy NFT</Link></p>
         </div>
       </div>
       <div className='lg:flex justify-between my-8'>

@@ -134,7 +134,7 @@ export default function Slider() {
                   ✅ Let’s Build Academy (Web3 courses) <br />
                   ✅ Exclusive Meetups & Events <br />
                   ✅ LB DAO Governance & Funding Decisions</p>
-                <Link to="https://lazy.letsbuilddao.org/">
+                <Link to="https://lazy.lbdao.xyz/">
                   <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Claim our NFt </button>
                 </Link>
               </div>
@@ -146,7 +146,7 @@ export default function Slider() {
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Let’s Build Academy</h3>
                 <p className='text-base text-[#C4C4C4] my-3'>A self-learning platform that teaches Web3 development, design, writing, and more. Access is granted through our Lazy NFT collection.</p>
-                <Link to="https://academy.letsbuilddao.org/">
+                <Link to="https://academy.lbdao.xyz/">
                   <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#7B5CFF] text-[#7B5CFF]'>Get Started </button>
                 </Link>
               </div>
