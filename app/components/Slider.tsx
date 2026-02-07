@@ -117,7 +117,7 @@ export default function Slider() {
               <img className='lg:w-[40%]' src="/images/lbd-academy.png" alt="" />
               <div className='lg:w-[30%] my-auto'>
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold text-[#030303]'>Bootcamps, Hackathons & Meetups</h3>
-                <p className='text-base text-[#373737] my-3'>We host community-driven Web3 events, connecting builders, investors, and enthusiasts to innovate, collaborate, and fund Africa’s blockchain revolution.</p>
+                <p className='text-base text-[#373737] my-3'>We organise Web3 events that unite builders, investors, and enthusiasts from around the world to collaborate, innovate, and fund global blockchain projects.</p>
                 <Link to={'https://t.me/letsbuilddaocommunity'}>
                   <button className='rounded-full text-[#FBFBFB] py-3 px-8 border border-[#8E0EB9] bg-[#8E0EB9]'>Join Our Community </button>
                 </Link>
@@ -131,7 +131,7 @@ export default function Slider() {
                 <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Lazy NFTs</h3>
                 <p className='text-base my-3 text-[#C4C4C4]'>Beyond collectibles – they are keys to: <br /> <br />
 
-                  ✅ Let’s Build Academy (Web3 courses) <br />
+                  ✅ Let's Build Academy (Web3 courses) <br />
                   ✅ Exclusive Meetups & Events <br />
                   ✅ LB DAO Governance & Funding Decisions</p>
                 <Link to="https://lazy.lbdao.xyz/">
@@ -144,7 +144,7 @@ export default function Slider() {
             <div className='lg:flex lg:p-10 p-6 justify-evenly'>
               <img className='lg:w-[40%]' src="/images/lbd-academy.png" alt="" />
               <div className='lg:w-[30%] my-auto'>
-                <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Let’s Build Academy</h3>
+                <h3 className='lg:text-5xl lg:mt-0 mt-6 text-3xl font-bold'>Let's Build Academy</h3>
                 <p className='text-base text-[#C4C4C4] my-3'>A self-learning platform that teaches Web3 development, design, writing, and more. Access is granted through our Lazy NFT collection.</p>
                 <Link to="https://academy.lbdao.xyz/">
                   <button className='rounded-full bg-[#FBFBFB] py-3 px-8 border border-[#8E0EB9] text-[#8E0EB9]'>Get Started </button>

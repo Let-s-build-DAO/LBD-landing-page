@@ -30,21 +30,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="LB DAO is building Africa’s first On-Chain Intelligence Hub, empowering individuals, businesses, and investors with real-time blockchain insights, decentralized governance, and funding intelligence." />
+        <meta name="description" content="LB DAO is building a global On‑Chain Intelligence Hub, empowering individuals, businesses, and investors with real‑time blockchain insights, decentralized governance, and funding intelligence." />
         <meta name="keywords" content="Web3, self-learning, coding platform, blockchain education, academy, NFT's, LB DAO, learn Web3, developer DAO, decentralized education" />
         <meta name="author" content="LB DAO" />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="We're Powering Africa's On-Chain Future" />
-        <meta property="og:description" content="LB DAO is building Africa’s first On-Chain Intelligence Hub, empowering individuals, businesses, and investors with real-time blockchain insights, decentralized governance, and funding intelligence." />
+        <meta property="og:title" content="We're Powering a Global On‑Chain Future" />
+        <meta property="og:description" content="LB DAO is building a global On‑Chain Intelligence Hub, empowering individuals, businesses, and investors with real‑time blockchain insights, decentralized governance, and funding intelligence." />
         <meta property="og:image" content="https://lbdao.xyz/images/lbd.png" /> {/* Replace with actual OG image URL */}
         <meta property="og:url" content="https://lbdao.xyz/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="We're Powering Africa's On-Chain Future" />
-        <meta name="twitter:description" content="LB DAO is building Africa’s first On-Chain Intelligence Hub, empowering individuals, businesses, and investors with real-time blockchain insights, decentralized governance, and funding intelligence." />
+        <meta name="twitter:title" content="We're Powering a Global On‑Chain Future" />
+        <meta name="twitter:description" content="LB DAO is building a global On‑Chain Intelligence Hub, empowering individuals, businesses, and investors with real‑time blockchain insights, decentralized governance, and funding intelligence." />
         <meta name="twitter:image" content="https://lbdao.xyz/images/lbd.png" />
         <Meta />
         <Links />
