@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='bg-[#E5DEFF] text-[#030303] rounded-sm mt-6 text-center p-4 text-sm'>
-        <p>Copyright © 2025 LBD. All rights reserved.</p>
+        <p>Copyright © 2026 LBD. All rights reserved.</p>
       </div>
     </footer>
   );
